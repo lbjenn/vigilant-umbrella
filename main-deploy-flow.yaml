@@ -1,0 +1,25 @@
+stages:
+  ##Verify and Validate changes and run quality checks
+  ##
+  verify:
+    actions:
+      - type: liquibase
+        command: flow
+        cmdArgs: {flowfile: 1liquibaseverify.flowfile.yaml}
+  ##Check for drift
+  ## is our environment as we expect it before we deploy more change?
+  drift:
+    actions:
+      - type: liquibase
+        command: flow
+        cmdArgs: {flowfile: 2liquibaseprecheck.flowfile.yaml}
+  ##Deploy
+  deploy:
+    actions:
+      - type: liquibase
+        command: flow
+        cmdArgs: {flowfile: 3liquibaserest.flowfile.yaml}
+endStage:
+  actions:
+    - type: liquibase
+      command: history
