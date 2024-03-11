@@ -1,7 +1,7 @@
---liquibase formatted sql
+---liquibase formatted sql
 
 --changeset studentl:createtblperson labels:r1 context:dev
---comment: example comment
+--comment: create person table
 create table person (
     personId SERIAL primary key not null,
     fname varchar(50) not null,
@@ -14,7 +14,7 @@ create table person (
 --rollback DROP TABLE person;
 
 --changeset student1:createtblcompany labels:r1 context:dev
---comment: example comment
+--comment:  create company table
 create table company (
     companyId SERIAL primary key not null,
     name varchar(50) not null,
@@ -27,12 +27,12 @@ create table company (
 
 
 --changeset student2:altertblperson-country labels:r1 context:dev
---comment: example comment
+--comment: add country column to company table
 alter table company add column country varchar(2)
 --rollback ALTER TABLE person DROP COLUMN country;
 
 --changeset student2:grantall labels:r1 context:dev
---comment: example comment
+--comment: grant all on company table
 GRANT ALL on company;
 
 
