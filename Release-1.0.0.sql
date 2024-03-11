@@ -1,4 +1,4 @@
----liquibase formatted sql
+--liquibase formatted sql
 
 --changeset studentl:createtblperson labels:r1 context:dev
 --comment: create person table
