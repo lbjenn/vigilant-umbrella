@@ -10,4 +10,11 @@ CREATE TABLE T_student(
 
 --changeset jenn:20240402-insert-a-row-student1 labels:jira-219,r1
 INSERT INTO T_student (student_fname, student_lname, state, testdml_rep,notes)
-VALUES ('Jennifer', ’Lewis', 'AR', 'Random comment for notes');
+VALUES ('Viktor', 'Hargreeves', 'NY', 'Random comment for notes');
+--rollback DELETE FROM T_student WHERE student_fname = ‘Viktor’;
+
+--changeset jenn:20240402-delete-a-row-student1 labels:jira-220,r1
+--comment: remove Jenn from student table
+DELETE FROM T_student
+--rollback INSERT INTO T_student (student_fname, student_lname, state, testdml_rep,notes)
+--rollback VALUES ('Viktor', 'Hargreeves', 'NY', 'Random comment for notes');
