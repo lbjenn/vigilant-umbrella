@@ -2,3 +2,4 @@ liquibase.log
 liquibase.properties
 Release-1.1.0-example.sql
 *.html
+cleanup.sh

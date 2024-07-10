@@ -26,7 +26,7 @@ create table company (
 )
 
 
---changeset student2:altertblperson-country labels:r1 context:dev
+--changeset student2:altertblperson-country labels:r1 
 --comment: add country column to company table
 alter table company add column country varchar(2)
 --rollback ALTER TABLE person DROP COLUMN country;
