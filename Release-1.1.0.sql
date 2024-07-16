@@ -20,9 +20,5 @@ DELETE FROM T_student
 --rollback INSERT INTO T_student (student_fname, student_lname, state, testdml_rep,notes)
 --rollback VALUES ('Viktor', 'Hargreeves', 'NY', 'Random comment for notes'); 
 
---changeset jenn:20240402-delete-a-row-student1 labels:jira-220,r1 context:dev
---comment: remove Jenn from student table
-DELETE FROM T_student
---rollback INSERT INTO T_student (student_fname, student_lname, state, testdml_rep,notes)
---rollback VALUES ('Viktor', 'Hargreeves', 'NY', 'Random comment for notes'); 
+
 
