@@ -19,7 +19,7 @@ LIQUIBASE_REPORTS_ENABLED=true
 
 **Liquibase Doc Pages that may be helpful:**
 
-[Quality Checks] (https://docs.liquibase.com/commands/quality-checks/subcommands/home.html)
+[Quality Checks](https://docs.liquibase.com/commands/quality-checks/subcommands/home.html)
 
 Quality Check Packages - https://docs.liquibase.com/liquibase-pro/quality-checks/checks-packages/home.html
 
