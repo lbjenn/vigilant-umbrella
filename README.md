@@ -21,13 +21,13 @@ LIQUIBASE_REPORTS_ENABLED=true
 
 [Quality Checks](https://docs.liquibase.com/commands/quality-checks/subcommands/home.html)
 
-Quality Check Packages - https://docs.liquibase.com/liquibase-pro/quality-checks/checks-packages/home.html
+[Quality Check Packages](https://docs.liquibase.com/liquibase-pro/quality-checks/checks-packages/home.html)
 
 For details on custom quality checks using regex patterns - Learn more here: 
-Single Regex Pattern Check - https://docs.liquibase.com/liquibase-pro/quality-checks/checks/changelog-checks/sql-user-defined-pattern-check.html
-PatternAFollowedByPatternB - https://docs.liquibase.com/liquibase-pro/quality-checks/checks/changelog-checks/patterna-followed-bypatternb.html
-PatternANotFollowedByPatternB - https://docs.liquibase.com/liquibase-pro/quality-checks/checks/changelog-checks/patterna-notfollowed-bypatternb.html
-PatternANotPrecededByPatternB - https://docs.liquibase.com/liquibase-pro/quality-checks/checks/changelog-checks/patterna-notpreceded-bypatternb.html
-PatternAPrecededByPatternB - https://docs.liquibase.com/liquibase-pro/quality-checks/checks/changelog-checks/patterna-preceded-bypatternb.html
+[Single Regex Pattern Check](https://docs.liquibase.com/liquibase-pro/quality-checks/checks/changelog-checks/sql-user-defined-pattern-check.html)
+[PatternAFollowedByPatternB](https://docs.liquibase.com/liquibase-pro/quality-checks/checks/changelog-checks/patterna-followed-bypatternb.html)
+[PatternANotFollowedByPatternB](https://docs.liquibase.com/liquibase-pro/quality-checks/checks/changelog-checks/patterna-notfollowed-bypatternb.html)
+[PatternANotPrecededByPatternB](https://docs.liquibase.com/liquibase-pro/quality-checks/checks/changelog-checks/patterna-notpreceded-bypatternb.html)
+[PatternAPrecededByPatternB](https://docs.liquibase.com/liquibase-pro/quality-checks/checks/changelog-checks/patterna-preceded-bypatternb.html)
 
 
