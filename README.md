@@ -2,19 +2,19 @@
 This repo contains artifacts to be use by the Liquibase Pro Data Governance Workshop on Quality Checks
 Assumes you are using **Liquibase Pro 4.28.0 or higher with a valid license key**
 
-Once you clone the repo make sure that the parent directory of the local repo is included in the LIQUIBASE_SEARCH_PATH
+Once you clone the repo make sure that the parent directory of the local repo is included in the LIQUIBASE_SEARCH_PATH<br />
 
-The WorkshopLabs diretory contain the lab instructions for using this in your own environment
+The WorkshopLabs directory contain the lab instructions for using this in your own environment<br />
 
-These environment variables need to be defined for environment session of within a liquibase.properties file:
-LIQUIBASE_COMMAND_CHANGELOG_FILE=workshopChangelog.xml
-LIQUIBASE_COMMAND_USERNAME=[db user name]
-LIQUIBASE_COMMAND_PASSWORD=[db user password for target DB]
-LIQUIBASE_COMMAND_URL=[jdbc connect string for target database]
-LIQUIBASE_LICENSE_KEY=[your valid pro license key]
-LIQUIBASE_COMMAND_CHECKS_RUN_CHECKS_OUTPUT=ISSUES
-LIQUIBASE_LOG_FORMAT=JSON_PRETTY
-LIQUIBASE_REPORTS_ENABLED=true
+These environment variables need to be defined for environment session of within a liquibase.properties file:<br />
+LIQUIBASE_COMMAND_CHANGELOG_FILE=workshopChangelog.xml<br />
+LIQUIBASE_COMMAND_USERNAME=[db user name] <br />
+LIQUIBASE_COMMAND_PASSWORD=[db user password for target DB] <br />
+LIQUIBASE_COMMAND_URL=[jdbc connect string for target database] <br />
+LIQUIBASE_LICENSE_KEY=[your valid pro license key] <br />
+LIQUIBASE_COMMAND_CHECKS_RUN_CHECKS_OUTPUT=ISSUES <br />
+LIQUIBASE_LOG_FORMAT=JSON_PRETTY <br />
+LIQUIBASE_REPORTS_ENABLED=true <br />
 
 
 **Liquibase Doc Pages that may be helpful:**
