@@ -1,6 +1,6 @@
 # vigilant-umbrella
 This repo contains artifacts to be use by the Liquibase Pro Data Governance Workshop on Quality Checks
-Assumes you are using Liquibase Pro 4.28.0 or higher with a valid license key
+Assumes you are using **Liquibase Pro 4.28.0 or higher with a valid license key**
 
 Once you clone the repo make sure that the parent directory of the local repo is included in the LIQUIBASE_SEARCH_PATH
 
@@ -17,9 +17,9 @@ LIQUIBASE_LOG_FORMAT=JSON_PRETTY
 LIQUIBASE_REPORTS_ENABLED=true
 
 
-Liquibase Doc Pages that may be helpful:
+**Liquibase Doc Pages that may be helpful:**
 
-Quality Checks - https://docs.liquibase.com/commands/quality-checks/subcommands/home.html
+[Quality Checks] (https://docs.liquibase.com/commands/quality-checks/subcommands/home.html)
 
 Quality Check Packages - https://docs.liquibase.com/liquibase-pro/quality-checks/checks-packages/home.html
 
