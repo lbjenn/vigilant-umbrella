@@ -20,5 +20,8 @@ DELETE FROM T_student
 --rollback INSERT INTO T_student (student_fname, student_lname, state, testdml_rep,notes)
 --rollback VALUES ('Viktor', 'Hargreeves', 'NY', 'Random comment for notes'); 
 
-
+--changeset student2:altertblcompany-corpstruc labels:r1, company 
+--comment: add country column to company table
+alter table company add column corp_structure varchar(5) DEFAULT='NA'
+--rollback ALTER TABLE person DROP COLUMN country;
 
