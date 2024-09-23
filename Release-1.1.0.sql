@@ -23,5 +23,5 @@ DELETE FROM T_student
 --changeset student2:altertblcompany-corpstruc labels:r1, company 
 --comment: add country column to company table
 alter table company add column corp_structure varchar(5) DEFAULT='NA'
---rollback ALTER TABLE person DROP COLUMN country;
+--rollback ALTER TABLE person DROP COLUMN corp_structure;
 
