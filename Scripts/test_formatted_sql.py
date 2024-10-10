@@ -6,6 +6,7 @@
 ###
 ### Helpers come from Liquibase
 ###
+import os
 import sys
 import liquibase_utilities
 import liquibase_changesets
@@ -22,8 +23,8 @@ liquibase_logger = liquibase_utilities.get_logger()
 liquibase_status = liquibase_utilities.get_status()
 
 ###
-###
 ### Retrieve changeset
+###
 changeset = liquibase_utilities.get_changeset()
 
 ###
@@ -32,7 +33,16 @@ changeset = liquibase_utilities.get_changeset()
 filepath = changeset.getChangeLog().getPhysicalFilePath()
 
 ###
-### Check for formatted sql
+### Ignore if not sql file
+###
+ext = os.path.splitext(filepath)[-1].lower()
+if ext != ".sql":
+    liquibase_logger.info(f"{ext} file extension skipped.")
+    liquibase_status.fired = False
+    sys.exit(1)
+
+###
+### Check for "formatted sql" in file
 ###
 found = False
 with open(filepath, 'r') as file:
